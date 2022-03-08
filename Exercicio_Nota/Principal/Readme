@@ -1,0 +1,11 @@
+Exercicio desenvolvido aplicando os conceitos de Classes, objeto, métodos, criação de variáveis.
+
+Classe é abstração de obejetos do mundo real, um molde para criar diferentes obejetos com os mesmos tipos, com valores diferentes.
+
+Método é uma funcionalidade da classe.
+
+Váriaveis é onde é armazenado os valores dos tipos.
+
+Foi criado uma classe Nota, onde foi criado 3 objetos notas a partir da classe Nota, e dois métodos da classe Nota, mediaAritimetica e notaPonderada, 
+onde cada método faz o calculo especifico, esses métodos foi do tipo void, sem retorno e sem parametro.
+
