@@ -34,20 +34,21 @@ public class Conta {
     
     }
     
-    void transferir(Conta efetuada, Conta destino,float valor){
+    void transferir(Conta destino,float valor){
         
-        destino.saldo = destino.saldo + valor;
-        efetuada.saldo = efetuada.saldo - valor;
+         saldo -= valor;
+         destino.saldo += valor;
         valorTransferido = valor;
-        
-        
-    }
 
+           
+    }
+   
     void info(){
         
         System.out.println("Correntista: " + correntista);
         System.out.println("Seul saldo é: "+ saldo);
         System.out.println("Transferência: "+ valorTransferido);
+          
     }
 
 

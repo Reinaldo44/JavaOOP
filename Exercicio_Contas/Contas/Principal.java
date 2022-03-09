@@ -25,7 +25,7 @@ public class Principal {
          conta2.depositar(100);
          conta2.sacar(230);
 
-         conta1.transferir(conta1, conta2, 55);
+         conta1.transferir(conta2, 100);
 
          conta1.info();
          conta2.info();
