@@ -1,0 +1,5 @@
+Esse codigo descreve como trabalhar com construtores de obejetos em Java.
+
+Pode se construir construtores com parâmetros das propriedades da classe ou com menos parâmetros, ou até sem parâmtro.
+
+Foi criado uma condição para ser criado o obejeto de acordo com a condição satisfeita.
