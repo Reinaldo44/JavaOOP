@@ -1,0 +1,4 @@
+Neste exercício prático foi trabalhado visibilidade das propriedades, restringir o ascesso diretamente as propriedades da classe.
+
+Podemos este caso usar o tipo private para restringir o acesso fora da classe, e para acessar a propriedade criamos um método get e set, da própria classe. Dessa forma
+podemos manipular a propriedade fora da classe.
