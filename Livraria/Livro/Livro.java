@@ -1,13 +1,21 @@
 package Livro;
 
-public class Livro {
+enum Genero {
+    Ação,
+    Tecnologia,
+    Romance,
+    Suspence
+}
+
+
+public abstract class Livro {
     
     private String titulo;
     private Autor autor;
     private int edicao;
-    private String genero; 
+    Genero genero;
 
-    public Livro(String titulo, Autor autor, int edicao, String genero){
+    public Livro(String titulo, Autor autor, int edicao, Genero genero){
         
         
         this.titulo = titulo;
@@ -29,11 +37,11 @@ public class Livro {
     public int getEdicao() {
         return edicao;
     }
-    public String getGenero() {
+    public Genero getGenero() {
 
         return genero;
     }
-    public void setGenero(String genero) {
+    public void setGenero(Genero genero) {
         this.genero = genero;
     }
     public void setTitulo(String titulo) {

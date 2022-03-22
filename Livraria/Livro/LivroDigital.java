@@ -5,7 +5,7 @@ public class LivroDigital extends Livro {
     private int download;
     private double tamanho;
 
-    public LivroDigital(int download, double tamanho, String titulo, Autor autor, int edicao, String genero) {
+    public LivroDigital( String titulo, Autor autor, int edicao, Genero genero,int download, double tamanho) {
         
         super(titulo, autor, edicao, genero);
         this.tamanho = tamanho;

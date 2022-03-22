@@ -4,13 +4,40 @@ public class Principal {
 
     public static void main(String[] args) {
 
-        LivroDigital livroDigital = new LivroDigital(4, 560.70, "Uma lenda alem das montanhs", new Autor("Reinaldo", "reinaldoap82@hotmail.com", "Jamaicano") , 3, "Aventura");
+    //Foi aplicado na classe livro como classe abstract, sendo assim não podendo criar um objeto de instância da classe Livro, na linha abaixo.
 
-        LivroFisico lFisico = new LivroFisico(200, 3, "Ola mundo", "Java na pratiaca", new Autor("Reinaldo", "reinaldoap82@hotmail.com", "Brasileiro"), 2, "tecnologia");
+    //Livro livro = new Livro(String titulo, Autor autor, int edicao, String genero);
 
-        livroDigital.info();
-        lFisico.info();
        
+     LivroFisico livroFisico = new LivroFisico("Homem Aranha", new Autor("reinaldo", "reinaldo@hotmail.com", "Brasileiro"), 2022 , Genero.Romance, 3000, 300);
+        
+     livroFisico.info();
+
+     System.out.println("-----------------------------");
+
+     LivroDigital livroDigital = new LivroDigital("Desvendendo o Java", new Autor("Paulo Junior", "Pjr@hotmail", "Chileno"), 2023, Genero.Tecnologia, 300, 4000.8);
+
+     livroDigital.info();
+
+    
+     System.out.println("Aqui foi feito uma referência de livroDigital e livroFisico e não uma instância do objeto");
+
+     // Aqui foi aplicado o polimorfismo 
+
+     Livro livro;
+
+     livro = livroDigital;
+
+     livro.info();
+
+     System.out.println("----------------------");
+
+     livro = livroFisico;
+
+     livro.info();
+
+
+        
     }
     
 }
